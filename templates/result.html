@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>检测结果</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+        .download-box { background: #f8f9fa; padding: 20px; margin: 20px 0; text-align: center; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>检测完成</h1>
+    <div class="download-box">
+        <p>预测结果已生成，点击下载：</p>
+        <a href="/download/{{ result_file }}" download>
+            <button>下载结果文件</button>
+        </a>
+    </div>
+    <p><a href="/">返回上传页面</a></p>
+</body>
+</html>

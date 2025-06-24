@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>防泄漏检测系统</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+        .upload-box { border: 2px dashed #ccc; padding: 30px; text-align: center; margin: 20px 0; }
+        input[type="file"] { margin: 10px 0; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>防泄漏日志文件上传检测</h1>
+    <form method="post" action="/predict" enctype="multipart/form-data">
+        <div class="upload-box">
+            <p>请上传XLS文件，上传文件格式须符合<a href="./download/模板.xlsx">模板</a>要求！</p>
+            <input type="file" name="file" accept=".xlsx">
+            <br>
+            <button type="submit">开始检测</button>
+        </div>
+    </form>
+</body>
+</html>
