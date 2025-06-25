@@ -14,7 +14,7 @@ model = joblib.load('leakproof_model.pkl')
 
 @app.route('/', methods=['GET'])
 def index():
-    """显示文件上传页面22"""
+    """显示文件上传页面"""
     return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
